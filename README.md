@@ -37,6 +37,22 @@ scripts/
 - **画面のドラッグ**: カメラの回転（横方向＝ヨー、縦方向＝ピッチ）
 - **右下の「ATK」ボタン**: 近接攻撃
 
+## ブラウザでプレイ（Web版 / GitHub Pages）
+
+`main` ブランチへの push をトリガーに、GitHub Actions (`.github/workflows/deploy-web.yml`) が
+Godot の HTML5 (Web) ビルドを自動生成し、GitHub Pages に公開します。
+
+公開後のURL（リポジトリ設定に依存）:
+
+```
+https://isshii710.github.io/action-rpg/
+```
+
+スマートフォンのブラウザからこのURLにアクセスすればそのままプレイできます（タッチ操作対応）。
+
+> **初回のみ必要な設定**: リポジトリの `Settings > Pages > Build and deployment > Source` を
+> `GitHub Actions` に設定してください。設定後、ワークフローが実行されるとPagesが公開されます。
+
 ## 開発環境
 
 - [Godot Engine 4.3](https://godotengine.org/) 以降を推奨
